@@ -1,303 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 </head>
+
 <body>
-    <div style="box-shadow: 0 0 15px rgba(0,0,0,0.3); padding: 40px; border: 1px solid #e1e1e1; display: inline-block; margin: 20px; overflow: hidden;">
-        
-        <style>
-            .preview_inner {
-                font-family: 'Andika', sans-serif;
-                font-size: 14px;
-                width: 680px;
-                color: #000000 !important;
-                text-align: left;
-                line-height: 1.4;
-                position: relative;
-                background-image: linear-gradient(to right, #f8f8f8 0%, #f8f8f8 230px, #ffffff 230px);
-                word-wrap: break-word;
-            }
-        
-            .preview_inner b {
-                color: #000 !important;
-            }
-        
-            .preview_inner p {
-                margin: 0 0 0.5em 0;
-            }
-        
-            .preview_inner img {
-                vertical-align: middle;
-            }
-        
-            .grey-text {
-                color: #666666;
-            }
-        
-            .template-left-column {
-                position: relative;
-                float: left;
-                width: 170px;
-                padding: 30px;
-                box-sizing: content-box;
-            }
-        
-            .section-avatar {
-                margin-bottom: 10px;
-            }
-        
-            .fio-text {
-                color: #39739b;
-                font-size: 23px;
-                line-height: 1.2;
-            }
-        
-            .position-text {
-                font-size: 16px;
-                margin-top: 10px;
-            }
-        
-            .template-left-column_section {
-                margin-top: 20px;
-            }
-        
-            .city-text {
-                color: #39739b;
-                font-size: 18px;
-            }
-        
-            .template-right-column {
-                float: left;
-                width: 430px;
-                padding: 20px 0 20px 19px;
-                box-sizing: content-box;
-            }
-        
-        
-            .section_header {
-                line-height: 26px;
-                margin: 0 0 1em 0;
-                font-size: 20px;
-                font-weight: normal;
-            }
-        
-            .preview_inner .section_header-icon {
-                width: 26px;
-                vertical-align: sub !important;
-            }
-        
-            .section_inner {
-                /*padding: 0 30px;*/
-            }
-        
-            .section_divider {
-                border-top: 1px solid #ebebeb;
-                margin: 20px 0;
-            }
-        
-            .section_row {
-                margin-bottom: 10px;
-            }
-        
-            .section_left {
-                float: left;
-                width: 100px;
-                padding-right: 20px;
-                font-size: 14px;
-                color: #666666;
-                font-weight: normal;
-                box-sizing: content-box;
-            }
-        
-            .section_right {
-                float: left;
-                width: 310px;
-                font-size: 14px;
-                color: #000000;
-                font-weight: normal;
-            }
-        
-            .avatar_background {
-                display: none;
-                width: 100%;
-                border-radius: 100%;
-                padding-bottom: 100%;
-            }
-        
-            .avatar_image img {
-                width: 100%;
-                border-radius: 100%;
-            }
-        
-            .phone-icons {
-                width: 16px;
-                vertical-align: middle;
-            }
-        
-            .pdf-layout .preview_inner {
-                background-image: linear-gradient(to left, #f8f8f8 0%, #f8f8f8 230px, #ffffff 230px);
-            }
-            .pdf-layout .preview_inner img {
-                vertical-align: top;
-            }
-        
-            .pdf-layout .avatar_background {
-                display: block;
-            }
-        
-            .pdf-layout .avatar_image {
-                display: none;
-                visibility: hidden;
-            }
-        
-            .pdf-layout .section_header {
-                /*vertical-align: middle;*/
-                /*line-height: 14px;*/
-            }
-        </style>
-        
-        <div class="preview_inner noselect" unselectable="on">
-            <div class="template-left-column">
-                <div class="template-left-column-shadow"></div>
-                <div class="section-avatar">
-                    <div class="avatar_image">
-                        <img src="https://rezume.me/static/upload/avatars/I/S/ISjfbRQiwkVvvjHL.jpeg">
-                    </div>
-                    <div class="avatar_background" style="background: url('https://rezume.me/static/upload/avatars/I/S/ISjfbRQiwkVvvjHL.jpeg') no-repeat center; background-size: contain; "></div>
-                </div>
-                <div class="fio-text">
-                    Калашников            Вадим            Николаевич        </div>
-                <div class="position-text">
-                    Программист        </div>
-        
-                <div class="template-left-column_section">
-                                    <div class="city-text">
-                            Верхняя Пышма, Свердловская область
-                                        </div>
-                                <div class="grey-text">
-                        Переезд невозможен            </div>
-                </div>
-        
-                <div class="template-left-column_section" style="font-size: 15px;">
-                    <p style="margin: 0;">
-                                                            <img src="https://rezume.me/static/img/i_whatsapp.svg" class="phone-icons">&nbsp;&nbsp;
-                                                    </p><p>
-                        +7(963)031-46-87            </p>
-                    <div>
-                        <img src="https://rezume.me/static/img/i_mail_orange.svg">&nbsp; vadim.kalashnikov66@gmail.com            </div>
-                </div>
-        
-                        <div class="template-left-column_section" style="font-size: 16px;">
-                    53 года, женат, есть дети        </div>
-                <div class="template-left-column_section">
-                    <p>
-                        <span class="grey-text">Желаемая зарплата:</span><br>
-                        50 000                рублей            </p>
-                    <p>
-                        <span class="grey-text">Готовность к командировкам:</span>
-                        Нет            </p>
-                    <p>
-                        <span class="grey-text">Занятость:</span>
-                        Частичная            </p>
-                    <p>
-                        <span class="grey-text">График работы:</span>
-                        Удаленная работа            </p>
-                    <p>
-                        <span class="grey-text">Гражданство:</span>
-                        Россия            </p>
-                                    <p>
-                            <span class="grey-text">Водительские права:</span>
-                            B                </p>
-                                                <p>
-                            <span class="grey-text">Языки:</span>
-                            Английский                </p>
-                                            <p>
-                        <span class="grey-text"></span>
-                    </p>
-                </div>
-            </div>
-            <div class="template-right-column">
-        
-                            <div class="section_inner">
-                        <div class="section_header">
-                            <img class="section_header-icon" style="vertical-align: middle; margin-right: 8px" src="https://rezume.me/static/img/i_work_orange.svg">
-                            ОПЫТ РАБОТЫ
-                        </div>
-                    </div>
-                                                    <div class="section_inner">
-                            <div class="section_row">
-                                <div class="section_left">
-                                                                    c 05.1994<br>
-        по настоящее время<br>
-        (25 лет и 10 месяцев)                                                    </div>
-                                <div class="section_right">
-                                    АО Уралэлектромедь                                                            <br><b>Ведущий инженер управления автоматизации</b>
-                                                                                                <br>Обязанности:<br>
-        - Поддержка внутрикорпоративного сайта.<br>
-        - Администрирование домена управления автоматизации. <br>
-        - Поддержка пользователей.<br>
-                                                            </div>
-                                <div style="clear: both;"></div>
-                            </div>
-                        </div>
-                            
-                                            <div class="section_divider"></div>
-                                <div class="section_inner">
-                        <div class="section_header">
-                            <img class="section_header-icon" style="vertical-align: middle; margin-right: 8px" src="https://rezume.me/static/img/i_education_orange.svg">
-                            ОБРАЗОВАНИЕ
-                        </div>
-                    </div>
-                                                    <div class="section_inner">
-                            <div class="section_row">
-                                <div class="section_left">
-                                                                    1994                                                    </div>
-                                <div class="section_right">
-                                    Московский государственный инженерно-физический институт (технический университет)                                                            <br>Электроники                                                                                        <br><b>Электроника и автоматика физических установок</b>
-                                                                <br>Очная                        </div>
-                                <div style="clear: both;"></div>
-                            </div>
-                        </div>
-                                                        <div class="section_divider"></div>
-                                        <div class="section_inner">
-                            <div class="section_row">
-                                <div class="section_left">
-                                                                    2020                                                    </div>
-                                <div class="section_right">
-                                    HTML Academy Санкт-Петербург                                                                                        <br><b>React-разработчик</b>
-                                                                <br>Дистанционная                        </div>
-                                <div style="clear: both;"></div>
-                            </div>
-                        </div>
-                    
-                
-                                            <div class="section_divider"></div>
-                                <div class="section_inner">
-                        <div class="section_header">
-                            <img class="section_header-icon" style="vertical-align: middle; margin-right: 8px" src="https://rezume.me/static/img/i_extended_orange.svg">
-                            ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
-                        </div>
-                    </div>
-                        <div class="section_inner">
-                            - Языки программирования: JavaScript, SQL<br>
-        - Техническое и программное обеспечение<br>
-        - HTML5<br>
-        - CSS3, Sass, LESS                                            <p></p>
-                                <p>
-                                    Ссылки:
-                                    <a href="https://kvn66.github.io/nerds/" rel="nofollow" target="_blank">https://kvn66.github.io/nerds/</a><br><a href="https://kvn66.github.io/cat-energy/" rel="nofollow" target="_blank">https://kvn66.github.io/cat-energy/</a><br><a href="https://kvn66.github.io/keksobooking/" rel="nofollow" target="_blank">https://kvn66.github.io/keksobooking/</a><br><a href="https://kvn66.github.io/cinemaddict/" rel="nofollow" target="_blank">https://kvn66.github.io/cinemaddict/</a>                        </p>
-                                            </div>
-        
-                    </div>
-        
-            <div style="clear: both;"></div>
-        
-        
+  <div
+    style="box-shadow: 0 0 15px rgba(0,0,0,0.3); padding: 40px; border: 1px solid #e1e1e1; display: inline-block; margin: 20px; overflow: hidden;">
+    <style>
+      .preview_inner {
+        font-family: "Andika", sans-serif;
+        font-size: 14px;
+        width: 680px;
+        color: #000000 !important;
+        text-align: left;
+        line-height: 1.4;
+        position: relative;
+        background-image: linear-gradient(to right,
+            #f8f8f8 0%,
+            #f8f8f8 230px,
+            #ffffff 230px);
+        word-wrap: break-word;
+      }
+
+      .preview_inner b {
+        color: #000 !important;
+      }
+
+      .preview_inner p {
+        margin: 0 0 0.5em 0;
+      }
+
+      .preview_inner img {
+        vertical-align: middle;
+      }
+
+      .grey-text {
+        color: #666666;
+      }
+
+      .template-left-column {
+        position: relative;
+        float: left;
+        width: 170px;
+        padding: 30px;
+        box-sizing: content-box;
+      }
+
+      .section-avatar {
+        margin-bottom: 10px;
+      }
+
+      .fio-text {
+        color: #39739b;
+        font-size: 23px;
+        line-height: 1.2;
+      }
+
+      .position-text {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      .template-left-column_section {
+        margin-top: 20px;
+      }
+
+      .city-text {
+        color: #39739b;
+        font-size: 18px;
+      }
+
+      .template-right-column {
+        float: left;
+        width: 430px;
+        padding: 20px 0 20px 19px;
+        box-sizing: content-box;
+      }
+
+      .section_header {
+        line-height: 26px;
+        margin: 0 0 1em 0;
+        font-size: 20px;
+        font-weight: normal;
+      }
+
+      .preview_inner .section_header-icon {
+        width: 26px;
+        vertical-align: sub !important;
+      }
+
+      .section_inner {
+        /*padding: 0 30px;*/
+      }
+
+      .section_divider {
+        border-top: 1px solid #ebebeb;
+        margin: 20px 0;
+      }
+
+      .section_row {
+        margin-bottom: 10px;
+      }
+
+      .section_left {
+        float: left;
+        width: 100px;
+        padding-right: 20px;
+        font-size: 14px;
+        color: #666666;
+        font-weight: normal;
+        box-sizing: content-box;
+      }
+
+      .section_right {
+        float: left;
+        width: 310px;
+        font-size: 14px;
+        color: #000000;
+        font-weight: normal;
+      }
+
+      .avatar_background {
+        display: none;
+        width: 100%;
+        border-radius: 100%;
+        padding-bottom: 100%;
+      }
+
+      .avatar_image img {
+        width: 100%;
+        border-radius: 100%;
+      }
+
+      .phone-icons {
+        width: 16px;
+        vertical-align: middle;
+      }
+
+      .pdf-layout .preview_inner {
+        background-image: linear-gradient(to left,
+            #f8f8f8 0%,
+            #f8f8f8 230px,
+            #ffffff 230px);
+      }
+
+      .pdf-layout .preview_inner img {
+        vertical-align: top;
+      }
+
+      .pdf-layout .avatar_background {
+        display: block;
+      }
+
+      .pdf-layout .avatar_image {
+        display: none;
+        visibility: hidden;
+      }
+
+      .pdf-layout .section_header {
+        /*vertical-align: middle;*/
+        /*line-height: 14px;*/
+      }
+    </style>
+
+    <div class="preview_inner noselect" unselectable="on">
+      <div class="template-left-column">
+        <div class="template-left-column-shadow"></div>
+        <div class="section-avatar">
+          <div class="avatar_image">
+            <img src="https://rezume.me/static/upload/avatars/I/S/ISjfbRQiwkVvvjHL.jpeg" />
+          </div>
+          <div class="avatar_background"
+            style="background: url('https://rezume.me/static/upload/avatars/I/S/ISjfbRQiwkVvvjHL.jpeg') no-repeat center; background-size: contain; ">
+          </div>
         </div>
-        
-                                </div>
+        <div class="fio-text">
+          Калашников Вадим Николаевич
+        </div>
+        <div class="position-text">
+          Программист
+        </div>
+
+        <div class="template-left-column_section">
+          <div class="city-text">
+            Верхняя Пышма, Свердловская область
+          </div>
+          <div class="grey-text">
+            Переезд невозможен
+          </div>
+        </div>
+
+        <div class="template-left-column_section" style="font-size: 15px;">
+          <p style="margin: 0;">
+            <img src="https://rezume.me/static/img/i_whatsapp.svg" class="phone-icons" />&nbsp;&nbsp;
+          </p>
+          <p>
+            +7(963)031-46-87
+          </p>
+          <div>
+            <img src="https://rezume.me/static/img/i_mail_orange.svg" />&nbsp;
+            vadim.kalashnikov66@gmail.com
+          </div>
+        </div>
+
+        <div class="template-left-column_section" style="font-size: 16px;">
+          53 года, женат, есть дети
+        </div>
+        <div class="template-left-column_section">
+          <p>
+            <span class="grey-text">Желаемая зарплата:</span><br />
+            50 000 рублей
+          </p>
+          <p>
+            <span class="grey-text">Готовность к командировкам:</span>
+            Нет
+          </p>
+          <p>
+            <span class="grey-text">Занятость:</span>
+            Частичная
+          </p>
+          <p>
+            <span class="grey-text">График работы:</span>
+            Удаленная работа
+          </p>
+          <p>
+            <span class="grey-text">Гражданство:</span>
+            Россия
+          </p>
+          <p>
+            <span class="grey-text">Водительские права:</span>
+            B
+          </p>
+          <p>
+            <span class="grey-text">Языки:</span>
+            Английский
+          </p>
+          <p>
+            <span class="grey-text"></span>
+          </p>
+        </div>
+      </div>
+      <div class="template-right-column">
+        <div class="section_inner">
+          <div class="section_header">
+            <img class="section_header-icon" style="vertical-align: middle; margin-right: 8px"
+              src="https://rezume.me/static/img/i_work_orange.svg" />
+            ОПЫТ РАБОТЫ
+          </div>
+        </div>
+        <div class="section_inner">
+          <div class="section_row">
+            <div class="section_left">
+              c 05.1994<br />
+              по настоящее время<br />
+              (25 лет и 10 месяцев)
+            </div>
+            <div class="section_right">
+              АО Уралэлектромедь <br /><b>Ведущий инженер управления автоматизации</b>
+              <br />Обязанности:<br />
+              - Поддержка внутрикорпоративного сайта.<br />
+              - Администрирование домена управления автоматизации. <br />
+              - Поддержка пользователей.<br />
+            </div>
+            <div style="clear: both;"></div>
+          </div>
+        </div>
+
+        <div class="section_divider"></div>
+        <div class="section_inner">
+          <div class="section_header">
+            <img class="section_header-icon" style="vertical-align: middle; margin-right: 8px"
+              src="https://rezume.me/static/img/i_education_orange.svg" />
+            ОБРАЗОВАНИЕ
+          </div>
+        </div>
+        <div class="section_inner">
+          <div class="section_row">
+            <div class="section_left">
+              1994
+            </div>
+            <div class="section_right">
+              Московский государственный инженерно-физический институт
+              (технический университет) <br /><b>Электроника и автоматика физических
+                установок</b>
+              <br />Очная
+            </div>
+            <div style="clear: both;"></div>
+          </div>
+        </div>
+        <div class="section_divider"></div>
+        <div class="section_inner">
+          <div class="section_row">
+            <div class="section_left">
+              2020
+            </div>
+            <div class="section_right">
+              HTML Academy Санкт-Петербург <br /><b>React-разработчик</b>
+              <br />Дистанционная
+            </div>
+            <div style="clear: both;"></div>
+          </div>
+        </div>
+
+        <div class="section_divider"></div>
+        <div class="section_inner">
+          <div class="section_header">
+            <img class="section_header-icon" style="vertical-align: middle; margin-right: 8px"
+              src="https://rezume.me/static/img/i_extended_orange.svg" />
+            ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ
+          </div>
+        </div>
+        <div class="section_inner">
+          - Языки программирования: JavaScript, SQL<br />
+          - Техническое и программное обеспечение<br />
+          - HTML5<br />
+          - CSS3, Sass, LESS
+          <p></p>
+          <p>
+            Ссылки:
+            <a href="https://kvn66.github.io/nerds/" rel="nofollow" target="_blank">https://kvn66.github.io/nerds/
+            </a><br />
+            <a href="https://kvn66.github.io/cat-energy/" rel="nofollow"
+              target="_blank">https://kvn66.github.io/cat-energy/</a><br /><a
+              href="https://kvn66.github.io/keksobooking/" rel="nofollow"
+              target="_blank">https://kvn66.github.io/keksobooking/</a><br /><a
+              href="https://kvn66.github.io/cinemaddict/" rel="nofollow"
+              target="_blank">https://kvn66.github.io/cinemaddict/</a>
+          </p>
+        </div>
+      </div>
+
+      <div style="clear: both;"></div>
+    </div>
+  </div>
 </body>
+
 </html>
